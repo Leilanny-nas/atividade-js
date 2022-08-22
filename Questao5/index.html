@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Site Adulto</title>
 </head>
 <body>
-    <div>
-        <input type="text">
+<div class="container">
+    <form action="#" method="post">
+    <div class="campo">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
     </div>
+    <div class="campo">
+        <input type="tel" name="tel" id="tel" placeholder="Telefone">
+    </div>
+    <div class="campo">
+        <input type="idade" id="idade" placeholder="Idade">
+    </div>
+
+    <button type="submit" class="enviar" onclick="enviar()">Enviar</button>
+
+    </form>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
