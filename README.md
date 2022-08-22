@@ -1,1 +1,1 @@
-# atividade de revisão JS - Aula de Programação Web2
+# Atividade de revisão JS - Aula de Programação Web2
