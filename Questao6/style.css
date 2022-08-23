@@ -1,20 +1,24 @@
 *{
-    margin-top: auto; 
+    margin: auto; 
     margin: auto;
-
+    font-weight: bold;
+    font-size: 15px;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(152, 195, 239), rgb(17, 54, 71));
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, rgb(84, 165, 246), rgb(17, 54, 71));
+    margin-top: auto;
+    background-color: white;
 }
 .box{
     color: rgb(7, 0, 0);
+    margin-top: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgba(215, 148, 148, 0.6);
-    padding: 20px;
+    background-color: rgba(236, 168, 168, 0.6);
+    padding: 10px;
     border-radius: 15px;
     width: 50%;
 }
@@ -24,10 +28,12 @@ fieldset{
 legend{
     border: 1px solid rgb(63, 149, 234);
     padding: 9px;
-    text-align:center;
+    text-align: center;
     background-color: rgb(49, 122, 211);
-    border-radius: 10px;
+    border-radius: 8px;
     width: 50%;
+    margin-top:auto;
+
 }
 .inputBox{
     position: relative;
@@ -35,9 +41,9 @@ legend{
 .inputUser{
     background: none;
     border: none;
-    border-bottom: 1px solid rgb(4, 4, 4);
+    border-bottom: 1px solid rgb(92, 90, 90);
     outline: none;
-    color: black;
+    color: rgb(54, 42, 42);
     font-size: 15px;
     width: 100%;
     letter-spacing: 2px;
@@ -53,15 +59,15 @@ legend{
 .inputUser:valid ~ .labelInput{
     top: -10px;
     font-size: 12px;
-    color: rgb(102, 148, 194);
+    color: rgb(10, 10, 10);
 }
-#data_nascimento, #sexo, #cargo{
+#data_nascimento, #sexo{
     border:none;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 7px;
+    border-radius: 9px;
     outline: none;
-    font-size: 15px;
-    background-color:rgb(23, 97, 187);
+    font-size: 14px;
+    background-color:rgb(180, 189, 200);
 }
 #submit{
     background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
@@ -69,7 +75,7 @@ legend{
     border: none;
     padding: 15px;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 20px;
     

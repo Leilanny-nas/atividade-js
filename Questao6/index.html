@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulário</title>
+    <title>Formulário de Clientes</title>
 </head>
 <body>
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
+                <br>
+                <legend><b>Dados Pessoais</b></legend>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <br>
-                <p>Gênero</p>
+                <div class="inputBox">
+                    <input type="text" name="rg" id="rg" class="inputUser" required size="13" maxlength="13">
+                    <label for="rg" class="labelInput">RG</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                    <label for="cpf" class="labelInput">CPF</label>
+                </div>
+                <br>
+                <label for="genero"><b>Gênero:</b></label>
                 <select name="sexo" id="sexo">
                     <option value="F">Feminino</option>
                     <option value="M">Masculino</option>
@@ -35,47 +41,58 @@
                 <br>
                 <label for="data_nascimento"><b>Data de Nascimento:</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
-                <br><br>
+                <br>
+                <legend><b>Dados de Endereço</b></legend>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="estado" id="estado" class="inputUser" required>
                     <label for="estado" class="labelInput">Estado</label>
                 </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="complemento" id="complemento" class="inputUser" required>
                     <label for="complemento" class="labelInput">Complemento</label>
                 </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="cep" id="cep" class="inputUser" required>
                     <label for="cep" class="labelInput">CEP</label>
+                </div><br>
+                <legend><b>Dados de Login</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
                 </div>
                 <br>
                 <div class="inputBox">
-                    <p>Profissão</p>
-                    <select name="cargo" id="cargo">
-                        <option value="CARGO">--</option>
-                        <option value="Estudante">Estudante</option>
-                        <option value="Empregado">Empregado</option>
-                        <option value="Aposentado">Aposentado</option>    
-                        <option value="Programador">Programador</option>
-                        <option value="Outro">Outro</option>
-                    </select>
+                    <input type="text" name="username" id="username" class="inputUser" required>
+                    <label for="username" class="labelInput">Usuário</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="pass" id="pass" class="inputUser" required>
+                    <label for="pass" class="labelInput">Senha</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="pass" id="pass_confirm" class="inputUser" required>
+                    <label for="pass" class="labelInput">Confirme sua senha</label>
                 </div>
                 <br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
